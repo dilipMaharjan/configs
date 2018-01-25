@@ -1,0 +1,21 @@
+System:
+    Ubuntu Zesty(17.04)
+1.Create a file /etc/apt/source.list.d/pgdg.list and add a line for repository
+    deb http://apt.postgresql.org/pub/repos/apt/ zesty-pgdg main
+2. Import the repository signing key, and update the package lists
+    wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | \
+    sudo apt-key add -
+3.Update 
+    sudo apt update
+4.Install postgresql
+    apt-get install postgresql-9.6 
+5.Check if the postgresql is running
+    sudo service postgresql status
+6.Switch machine user
+    sudo -i -u postgres
+7. Acess postgresql prompt 
+    psql
+8. Exit postgres prompt
+    \q
+9. Or You can just access postgres prompt by 
+    sudo -u postgres psql
