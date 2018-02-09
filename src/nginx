@@ -1,0 +1,6 @@
+1.Install nginx in ubuntu 17.10
+    - sudo apt install nginx
+2.Access nginx config file 
+    - any_text_editor /etc/nginx/nginx.conf
+3. Access logs files 
+    - any_text_editor /var/logs/nginx
